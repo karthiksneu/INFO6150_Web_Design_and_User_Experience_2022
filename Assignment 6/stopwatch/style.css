@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(119, 158, 203);
+}
+
+.container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border: 8px solid white;
+    color: white;
+    
+   
+}
+
+.container h1, p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+
+.container p {
+    font-size: 85px;
+    margin-top: 5px;
+}
+
+
+button {
+    padding: 10px 24px;
+    font-size: 16px;
+    border: 1px solid white;
+    background-color: rgb(119, 158, 203);
+    color: white;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+   
+}
+
+button:hover {
+    background-color: white;
+    color:  rgb(119, 158, 203);
+}
+
