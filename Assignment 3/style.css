@@ -1,0 +1,37 @@
+#stdntTable input {
+	margin-left: 5px;
+}
+
+#stdntTable {
+	border:2px solid green;
+	border-collapse: collapse;
+	margin: 30px 30px 20px 40px;
+}
+#stdntTable td, th {
+	border:1px solid green;
+	padding: 5px;
+}
+#stdntTable th {
+	color: #fff;
+	background-color: #a7c942;
+}
+
+#stdntTable img {
+    cursor: pointer;
+}
+
+.dropDownTextArea {
+    display: none;
+}
+
+.columnHide {
+	display: none;
+}
+
+#button {
+	color:#fff;
+	background-color: orange;
+	border-radius: 3px;
+	border:2px solid gray;
+	margin-left: 180px;
+} 

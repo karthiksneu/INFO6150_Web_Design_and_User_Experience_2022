@@ -2,10 +2,10 @@ document.getElementById("user").innerHTML =
   "Welcome " + localStorage.getItem("username") + ",";
 
 $(document).ready(() => {
-  $("#first_num").focusout(function () {
+  $("#first_num").focusin(function () {
     checkInt();
   });
-  $("#second_num").focusout(function () {
+  $("#second_num").focusin(function () {
     checkInt();
   });
 
@@ -14,30 +14,21 @@ $(document).ready(() => {
     var num2 = parseFloat($("#second_num").val());
     var num3 = num1 + num2;
     console.log(num3);
-    if(isNaN(num3)){
-      alert("Please enter valid input characters!");
-    } else {
-      document.display.result.value = num3;
-    }
-    
+    document.display.result.value = num3;
   });
 
   $("#subbtn").click(() => {
     var num1 = parseFloat($("#first_num").val());
     var num2 = parseFloat($("#second_num").val());
     var num3 = num1 - num2;
-    if(isNaN(num3)){
-      alert("Please enter valid input characters!");
-    } else {
-      document.display.result.value = num3;
-    }
+    document.display.result.value = num3;
   });
 
   $("#divbtn").click(() => {
     var num1 = parseFloat($("#first_num").val());
     var num2 = parseFloat($("#second_num").val());
     var num3 = num1 / num2;
-    if(isNaN(num3)){
+    if (isNaN(num3)) {
       alert("Please enter valid input characters!");
     } else {
       document.display.result.value = num3;
@@ -48,7 +39,7 @@ $(document).ready(() => {
     var num1 = parseFloat($("#first_num").val());
     var num2 = parseFloat($("#second_num").val());
     var num3 = num1 * num2;
-    if(isNaN(num3)){
+    if (isNaN(num3)) {
       alert("Please enter valid input characters!");
     } else {
       document.display.result.value = num3;
@@ -60,20 +51,9 @@ $(document).ready(() => {
     var num2 = $("#second_num").val();
     var regex = /^[0-9]$/;
     var isInt = true;
-    // if (regex.test(num1) && regex.test(num2)) {
-    //   $("#first_num").css("border-bottom", "2px solid #34F458");
-    //   $("#second_num").css("border-bottom", "2px solid #34F458");
-    //   return true;
-    // } else {
-    //   $("#first_num").css("border-bottom", "2px solid #F90A0A");
-    //   $("#second_num").css("border-bottom", "2px solid #F90A0A");
-    //   $(".btngrp").attr("disabled", true);
-    //   return false;
-    // }
 
     if (regex.test(num1)) {
       $("#first_num").css("border-bottom", "2px solid #34F458");
-      
     } else {
       $("#first_num").css("border-bottom", "2px solid #F90A0A");
       // $(".btngrp").attr("disabled", true);
@@ -81,7 +61,6 @@ $(document).ready(() => {
     }
     if (regex.test(num2)) {
       $("#second_num").css("border-bottom", "2px solid #34F458");
-      
     } else {
       $("#second_num").css("border-bottom", "2px solid #F90A0A");
       // $(".btngrp").attr("disabled", true);
