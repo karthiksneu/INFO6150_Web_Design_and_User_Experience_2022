@@ -2,10 +2,10 @@ document.getElementById("user").innerHTML =
   "Welcome " + localStorage.getItem("username") + ",";
 
 $(document).ready(() => {
-  $("#first_num").focusin(function () {
+  $("#first_num").focusout(function () {
     checkInt();
   });
-  $("#second_num").focusin(function () {
+  $("#second_num").focusout(function () {
     checkInt();
   });
 
@@ -14,14 +14,22 @@ $(document).ready(() => {
     var num2 = parseFloat($("#second_num").val());
     var num3 = num1 + num2;
     console.log(num3);
-    document.display.result.value = num3;
+    if (isNaN(num3)) {
+      alert("Please enter valid input characters!");
+    } else {
+      document.display.result.value = num3;
+    }
   });
 
   $("#subbtn").click(() => {
     var num1 = parseFloat($("#first_num").val());
     var num2 = parseFloat($("#second_num").val());
     var num3 = num1 - num2;
-    document.display.result.value = num3;
+    if (isNaN(num3)) {
+      alert("Please enter valid input characters!");
+    } else {
+      document.display.result.value = num3;
+    }
   });
 
   $("#divbtn").click(() => {
@@ -45,6 +53,11 @@ $(document).ready(() => {
       document.display.result.value = num3;
     }
   });
+
+  $("#resetbtn").click(()=> {
+    $("#first_num").css("border", "none");
+    $("#second_num").css("border", "none");
+  })
 
   function checkInt() {
     var num1 = $("#first_num").val();
