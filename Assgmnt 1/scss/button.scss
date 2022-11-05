@@ -1,0 +1,12 @@
+@mixin btn {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(63, 57, 57);
+    padding: 15px 15px;
+    text-align: center;
+    margin: 0px 2px;
+    cursor: pointer;
+    float: right;
+
+}

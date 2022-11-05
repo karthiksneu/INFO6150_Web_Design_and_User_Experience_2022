@@ -1,0 +1,188 @@
+@import 'variable';
+@import 'button';
+
+
+
+header {
+	width: 100%;
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+	font-style: italic;
+	padding: 5px;
+	color: $color_1;
+	display: inline-block;
+}
+
+.button {
+    @include btn;
+}
+
+#logo {
+	background-color: $background-color_1;
+	color: $color_1;
+	font-weight: bold;
+	font-style: italic;
+	display: flexbox;
+	text-decoration: none;
+	font-size: 32px;
+}
+.tcontainer {
+	img {
+		width: 100%;
+		height: 97%;
+	}
+}
+.titlebox {
+	padding: 5px;
+	font-size: 20px;
+	font-family: $font-family_1;
+	background-color: $background-color_3;
+	color: $color_1;
+	text-align: center;
+}
+table {
+	width: 100%;
+}
+td {
+	width: 50%;
+}
+.package {
+	padding: 5px;
+	font-size: 30px;
+	text-align: center;
+	td {
+		width: 25%;
+		font-size: 15px;
+	}
+	img {
+		&:hover {
+			cursor: pointer;
+			width: 80%;
+			height: 180px;
+		}
+	}
+}
+.comfooter {
+	display: block;
+	padding: 5px;
+	width: 100%;
+	text-align: center;
+	background-color: $background-color_1;
+	a {
+		padding: 5px;
+		text-decoration: none;
+		color: $color_1;
+		font-size: 15px;
+	}
+	ul {
+		list-style: none;
+		padding: 5px;
+		font-size: 10px;
+		margin-top: 10px;
+	}
+}
+.contact {
+	padding: 15px;
+	height: 600px;
+	font-family: $font-family_1;
+}
+.contactform {
+	width: 50%;
+	float: left;
+	color: $color_3;
+	input {
+		padding: 15px;
+	}
+}
+.formbutton {
+	font-style: normal;
+	color: $color_2;
+	background-color: $background-color_4;
+	text-align: center;
+	margin: 0px;
+	cursor: pointer;
+	border: 0px;
+}
+#msg {
+	height: 150px;
+}
+.contactform1 {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	float: left;
+	color: $color_3;
+	img {
+		margin-top: 15%;
+		margin-left: 10%;
+		width: 50%;
+		height: 50%;
+	}
+}
+.bookingtab {
+	padding: 15px;
+	width: 100%;
+	height: 600px;
+	font-family: $font-family_1;
+}
+.image {
+	display: flex;
+	width: 50%;
+	height: 600px;
+	float: left;
+	img {
+		padding: 15px 0px;
+		height: 65%;
+		width: 75%;
+	}
+}
+.bookingform {
+	width: 50%;
+	float: right;
+	color: $color_3;
+	input {
+		padding: 15px;
+		font-family: $font-family_1;
+	}
+}
+.location {
+	height: 500px;
+	text-align: center;
+	font-family: $font-family_1;
+	font-size: 30px;
+	table {
+		width: 75%;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+		padding: 15px;
+		border: 2px solid black;
+		text-align: center;
+		background-color: $background-color_5;
+		color: $color_1;
+		cursor: pointer;
+	}
+	td {
+		width: 33%;
+		font-size: 15px;
+		border-collapse: collapse;
+		padding: 15px;
+		border: 2px solid black;
+		color: $color_1;
+		text-align: center;
+	}
+}
+th {
+	width: 75%;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	padding: 15px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: $background-color_5;
+	color: $color_1;
+	cursor: pointer;
+}
